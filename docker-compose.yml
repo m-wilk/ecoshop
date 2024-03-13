@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  ecoshop-front:
+    container_name: ecoshop-front
+    hostname: ecoshop-front
+    image: ecoshop-front
+    # tty: true
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/code/app
+      - ./app/node_modules:/code/app/node_modules

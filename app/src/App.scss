@@ -1,0 +1,15 @@
+@import "./assets/scss/bootstrap.scss";
+
+.devider {
+     height: 1.4rem;
+     width: 1px;
+     background-color: grey;
+}
+
+.custom-input:focus {
+     outline: none; 
+     box-shadow: none; 
+     
+   }
+
+   

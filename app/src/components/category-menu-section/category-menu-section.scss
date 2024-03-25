@@ -1,0 +1,33 @@
+@import "../../assets/scss/bootstrap.scss";
+
+.btn-allcategory {
+    width: 18rem;
+    height: 3.5rem
+}
+
+
+.category-menu-section {
+    .icon {
+        width: 20px;
+        height: 17px;
+    }
+    li {
+        &:hover {
+            background-color: $success;
+            transition: all 1s ease-out;
+            span, svg {
+                color: white;
+                fill: white;
+            }
+            
+        }
+    }
+}
+
+.position-absolute-menu {
+    position: absolute;
+    top: 56px;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  
+}

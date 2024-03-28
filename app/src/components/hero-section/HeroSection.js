@@ -4,13 +4,16 @@ import Hero from "../../assets/img/hero-img-1.png";
 import Hero2 from "../../assets/img/hero-img-2.png";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from "swiper/modules";
-import 'swiper/css/effect-fade';
 
 const data = [
-  { id: 0, title: "There's you can Buy your all of Grocery Products." ,
- img: Hero},
-  { id: 1, title: "We Provide Fresh and Organic Fruits To Your Door." ,
-img: Hero2},
+  {
+    id: 0, title: "There's you can Buy your all of Grocery Products.",
+    img: Hero
+  },
+  {
+    id: 1, title: "We Provide Fresh and Organic Fruits To Your Door.",
+    img: Hero2
+  },
 ];
 
 const HeroSection = () => {
@@ -25,6 +28,9 @@ const HeroSection = () => {
           pagination={{ clickable: true }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
+          fadeEffect={{
+            crossFade: true // enables slides to cross fade
+          }}
         >
           {data.map((slide) => (
             <SwiperSlide key={slide.id}>

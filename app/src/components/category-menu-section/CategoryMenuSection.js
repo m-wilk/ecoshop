@@ -1,4 +1,4 @@
-import "./category-menu-section.scss"
+import "./category-menu-section.scss";
 import { ReactComponent as Dropdown } from "../../assets/img/dropdown.svg";
 import { ReactComponent as Arrowdown } from "../../assets/img/arrowdown.svg";
 import { ReactComponent as Vegetable } from "../../assets/img/vegetable.svg";
@@ -17,140 +17,139 @@ const CategoryMenuSection = () => {
         </span>
       </button>
       {/* DropDownList */}
-      <div className="bg-white position-absolute-menu w-100">
-        <ul className="list-group list-group-flush">
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+
+      {/* <ul className="list-group list-group-flush bg-white position-absolute-menu w-100">
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Vegrtable</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+            </div>
+          </a>
+        </li>
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Fruits</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+            </div>
+          </a>
+        </li>
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Juice</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+            </div>
+          </a>
+        </li>
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Meat</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+            </div>
+          </a>
+        </li>
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Smoothie</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+            </div>
+          </a>
+        </li>
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Vegrtable</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+            </div>
+          </a>
+        </li>
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Vegrtable</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+            </div>
+          </a>
+        </li>
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Vegrtable</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+            </div>
+          </a>
+        </li>
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Vegrtable</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-          <li className="list-group-item">
-            <a className="text-decoration-none" href="#product-sidebar.html">
-              <div className="d-flex justify-content-between px-2 py-2">
+            </div>
+          </a>
+        </li>
+        <li className="list-group-item">
+          <a className="text-decoration-none" href="#product-sidebar.html">
+            <div className="d-flex justify-content-between px-2 py-2">
               <div className="d-flex align-items-center">
-                <Vegetable className="me-3 icon"/>
+                <Vegetable className="me-3 icon" />
                 <span>Vegrtable</span>
               </div>
               <div>
-              <DropDownIcon />
+                <DropDownIcon />
               </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
+            </div>
+          </a>
+        </li>
+      </ul> */}
     </div>
   );
 };

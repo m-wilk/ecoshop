@@ -1,0 +1,11 @@
+.grocery-section {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    .product-wrapper {
+        background: url("../../assets/img/grocery-bg.png") no-repeat center center;
+        background-size: cover;
+        padding: 3rem 4rem 4rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+
+    }
+}

@@ -1,0 +1,37 @@
+.product-footer-section {
+  padding: 5rem 0 1rem 0;
+  background: #1d1d1d;
+
+  .footer-top-section {
+    background: url("../../assets/img/footer-top-bg.png") no-repeat center
+      center;
+    background-size: cover;
+    height: 33rem;
+    margin-top: -12rem;
+  }
+
+  .footer-down-section {
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: green;
+        text-decoration: underline;
+      }
+    }
+    padding-top: 3rem;
+    a,
+    p {
+      color: #e3e3e3;
+    }
+
+    hr {
+      color: rgba(235, 235, 235, 0.3);
+      height: px;
+      margin-top: 1rem;
+    }
+    .footer-end-section {
+      padding: 1rem 0 1rem 0;
+    }
+  }
+}

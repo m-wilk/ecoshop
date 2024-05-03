@@ -6,7 +6,7 @@ import { ReactComponent as Envelope } from "../../assets/img/envelope.svg";
 const HeaderTopSection = () => {
   return (
     <div className="header-top-section">
-      <div className="container d-flex flex-wrap justify-content-between px-5 py-3 fw-medium "> 
+      <div className="container d-flex flex-wrap justify-content-between py-3 fw-medium "> 
       <div>
         <a className="me-3 text-decoration-none" href="#">
           <span>Account</span>

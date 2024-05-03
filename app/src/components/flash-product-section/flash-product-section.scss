@@ -1,0 +1,41 @@
+.flash-sale {
+  background-color: white;
+  padding: 5rem 0 6rem 0;
+  .flash-sale-section {
+    background: url("../../assets/img/flash_sale.png") no-repeat center;
+    background-size: cover;
+    height: 30rem;
+    padding: 3rem 4rem 4rem;
+    border-radius: 4px;
+    position: relative;
+    .coutdown-section {
+      margin-bottom: 3rem;
+      .coutdown-items {
+        .coutdown-text {
+          font-size: 1.3rem;
+        }
+        .coutdown-number {
+          height: 7rem;
+          width: 7rem;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  .discout-item {
+    background: #ffbb38;
+    color: #1d1d1d;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 5rem;
+  .discout-text {
+    font-size: 2.5rem;
+  }
+  .discout-inner-text {
+    font-size: 1.8rem;
+  }
+    
+  }
+}

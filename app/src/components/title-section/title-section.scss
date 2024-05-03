@@ -1,0 +1,18 @@
+.title-section {
+  margin-bottom: 2rem;
+  a {
+    &::after {
+      transition: all 0.4s;
+      content: "";
+      width: 0;
+      height: 2px;
+      background: black;
+      display: block;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

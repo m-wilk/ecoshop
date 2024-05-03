@@ -1,0 +1,17 @@
+.shop-btn {
+    padding: 12px 34px;
+    margin: 0px;
+    text-align: center;
+    border-radius: 0.4rem;
+    display: inline-block;
+    background: #ffbb38;
+    transition: ease-out;
+    transition-duration: 0.3s;
+    &:hover {
+      box-shadow: inset 300px 0 0 0 black;
+      color: white;
+    }
+    &.violet {
+      background: #6f42c1;
+    }
+  }

@@ -30,7 +30,7 @@ const ProductFreshItem = (props) => {
           className="text-decoration-none product-details fw-bold"
           href="product-info.html"
         >
-          Fresh Red Tomatos
+          {props.title}
         </a>
         <div className="d-flex justify-content-center align-items-center price">
           <span className="text-secondary fw-bold price-cut">$12.99</span>

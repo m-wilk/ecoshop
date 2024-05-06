@@ -1,27 +1,30 @@
 import TitleSection from "../title-section/TitleSection";
 import "./product-fresh-section.scss";
 import ProductFreshItem from "../product-fresh-item/ProductFreshItem";
+import scrollreveal from "scrollreveal";
+import ScrollReveal from "../scroll-reveal/ScrollReveal";
 
 const ProductCategorySection = (props) => {
   return (
     <div className="product-fresh">
       <div className="container">
         <TitleSection title={props.title}  headerClassName="fw-bold" />
+        <ScrollReveal>
         <div className="row gy-4">
           <div className="col-xl-3 col-lg-4 col-sm-6">
-            <ProductFreshItem />
+            <ProductFreshItem title="Fresh Red Tomatos"/>
           </div>
           <div className="col-xl-3 col-lg-4 col-sm-6">
-            <ProductFreshItem />
+            <ProductFreshItem title="Chicken Egss" />
           </div>
           <div className="col-xl-3 col-lg-4 col-sm-6">
-            <ProductFreshItem />
+            <ProductFreshItem title="Fresh Watemelon"/>
           </div>
           <div className="col-xl-3 col-lg-4 col-sm-6">
-            <ProductFreshItem />
+            <ProductFreshItem title="Beef Steak"/>
           </div>
         </div>
-        {props.children}
+        </ScrollReveal>
       </div>
     </div>
   );

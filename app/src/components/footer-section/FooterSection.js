@@ -4,6 +4,7 @@ import { ReactComponent as IconLocation } from "../../assets/img/icon-location.s
 import { ReactComponent as Instagram } from "../../assets/img/instagram.svg";
 import Logo from "../../assets/img/logo.png";
 import Payment from "../../assets/img/payment-img.png";
+import ScrollReveal from "../scroll-reveal/ScrollReveal";
 
 const FuterSection = () => {
   return (
@@ -14,6 +15,7 @@ const FuterSection = () => {
             <div className="col-lg-4"></div>
             <div className="col-lg-8">
               <div className="footer-wrapper d-flex flex-column justify-content-center align-items-center">
+                <ScrollReveal>
                 <div className="footer-wrapper-content text-center">
                   <h3 className="text-white fw-bold mb-2">
                     Get <span className="text-warning">20%</span> Off Discount
@@ -23,8 +25,11 @@ const FuterSection = () => {
                     by Subscribe our Newsletter
                   </p>
                 </div>
+                </ScrollReveal>
                 <div className="footer-wrapper-email w-75">
-                  <form>
+
+                <ScrollReveal origin="left">
+                <form>
                     <div className="input-group">
                       <span className="input-group-text border-0 bg-white">
                         <Envelope />
@@ -42,6 +47,8 @@ const FuterSection = () => {
                       </button>
                     </div>
                   </form>
+                </ScrollReveal>
+                 
                 </div>
               </div>
             </div>
@@ -172,14 +179,14 @@ const FuterSection = () => {
                 <Instagram />
               </a>
               <p className="m-0">
-                ©2024
+                ©2024&nbsp;
                 <a
                   className="text-decoration-none fw-bold text-success"
                   href="#"
                 >
                     Quomodosoft 
                 </a> 
-                 All rights reserved
+                &nbsp; All rights reserved
               </p>
             </div>
             <img src={Payment}/>

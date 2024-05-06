@@ -4,6 +4,8 @@ import Fruits from "../../assets/img/c-img-1.png";
 import { ReactComponent as DropDownIcon } from "../../assets/img/drop-down-icon.svg";
 import ShopFruits from "../../assets/img/c-shop-img-1.png";
 import ShopButton from "../shop-button/ShopButton";
+import ScrollReveal from "../scroll-reveal/ScrollReveal";
+
 
 
 
@@ -12,6 +14,7 @@ const ProductCategorySection = () => {
     <div className="container product-category-section">
       <TitleSection title="Market Category" headerClassName="fw-bold"/>   
       {/* category section */}
+      <ScrollReveal origin="left">
       <div className="category-section ">
         <div className="d-flex flex-column align-items-center  gap-3">
           <div className="wraper-img">
@@ -74,14 +77,17 @@ const ProductCategorySection = () => {
           </div>
         </div>
       </div>
+      </ScrollReveal>
+      
       {/* healthy-section */}
+      <ScrollReveal>
       <div className="healthy-section">
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6">
             <div className="wrapper one">
               <div className="wrapper-info">
                 <span className="wrapper-subtitle">Fruits</span>
-                <h2 className="fw-bold pb-1">
+                <h2 className="fw-bold">
                   Healthy & Goods <br /> Fruits
                 </h2>
                 <ShopButton text="Shop Now" className="bg-success text-white fw-bold" iconClassName="white-icon" />
@@ -97,7 +103,7 @@ const ProductCategorySection = () => {
 
                 <div className="wrapper-info">
                 <span className="wrapper-subtitle">Fruits</span>
-                <h2 className="fw-bold pb-1">
+                <h2 className="fw-bold ">
                   Healthy & Goods <br /> Fruits
                 </h2>
                 <ShopButton text="Shop Now" className="bg-danger text-white fw-bold" iconClassName="white-icon"/>
@@ -109,7 +115,7 @@ const ProductCategorySection = () => {
             <div className="wrapper three">
               <div className="wrapper-info">
                 <span className="wrapper-subtitle">Fruits</span>
-                <h2 className="fw-bold pb-1">
+                <h2 className="fw-bold">
                   Healthy & Goods <br /> Fruits
                 </h2>
                 <ShopButton text="Shop Now" className="violet text-white fw-bold" iconClassName="white-icon"/>
@@ -119,6 +125,8 @@ const ProductCategorySection = () => {
           </div>
         </div>
       </div>
+      </ScrollReveal>
+      
     </div>
   );
 };

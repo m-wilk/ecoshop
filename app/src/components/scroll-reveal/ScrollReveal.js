@@ -12,7 +12,7 @@ const ScrollReveal = ({ children, origin = "bottom"}) => {
       scrollReveal().reveal(sectionRef.current, {
         distance: '60px',
         origin: origin,
-        delay: 400,
+        delay: 500,
         duration: 500,
         reset: true
       });

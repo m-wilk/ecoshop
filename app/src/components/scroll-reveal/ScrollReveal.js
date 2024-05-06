@@ -10,7 +10,7 @@ const ScrollReveal = ({ children, origin = "bottom"}) => {
   useEffect(() => {
     if (sectionRef.current)
       scrollReveal().reveal(sectionRef.current, {
-        distance: '150%',
+        distance: '60px',
         origin: origin,
         delay: 400,
         duration: 500,

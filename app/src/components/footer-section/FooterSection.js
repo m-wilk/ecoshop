@@ -40,7 +40,7 @@ const FuterSection = () => {
                         placeholder="EMAIL ADDRESS"
                       />
                       <button
-                        class="btn btn-warning px-4 fw-semibold"
+                        className="btn btn-warning px-4 fw-semibold"
                         type="button"
                       >
                         Get the Coupon

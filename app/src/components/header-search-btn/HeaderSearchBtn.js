@@ -8,8 +8,8 @@ const HeaderSearchBtn = () => {
         placeholder="Search Product..."
       ></input>
       <div className="devider me-3"></div>
-      <select className="form-select border-0 custom-input">
-        <option selected>Meat</option>
+      <select defaultValue="0" className="form-select border-0 custom-input">
+        <option value="0">Meat</option>
         <option value="1">Vegrtable</option>
         <option value="2">Fruits</option>
         <option value="3">Juice</option>

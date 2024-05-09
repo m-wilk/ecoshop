@@ -11,7 +11,7 @@ import BestProductSection from "../components/best-product-section/BestProductSe
 import ProductSaleSection from "../components/product-sale-section/ProductSaleSection";
 import FooterSection from "../components/footer-section/FooterSection";
 
-const Layout = () => {
+const Home = () => {
   return (
     <>
       <HeaderTopSection />
@@ -41,4 +41,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default Home;

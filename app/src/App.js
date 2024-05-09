@@ -1,5 +1,6 @@
 import "./App.scss";
-import Layout from "./template/Layout";
+import Home from "../src/pages/Home";
+import Registration from "./pages/registration/Registration";
 import 'swiper/css/bundle';
 import 'swiper/css/pagination';
 
@@ -9,7 +10,7 @@ import 'swiper/css/pagination';
 function App() {
   return (
     <div>
-      <Layout />
+      <Registration />
     </div>
   );
 }

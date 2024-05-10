@@ -1,0 +1,27 @@
+============================================================================================
+
+POST http://localhost:8100/api/v1/auth/register/
+body = {
+    name?: string;
+    surname?: string;
+    email: string;
+    password: string;
+    password2: string;
+}
+
+============================================================================================
+
+POST http://localhost:8100/api/v1/auth/login/
+body = {
+    email: string;
+    password: string;
+}
+
+============================================================================================
+
+POST http://localhost:8100/api/v1/auth/token/refresh/
+body = {
+    refresh: string;
+}
+
+============================================================================================

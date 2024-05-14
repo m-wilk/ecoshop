@@ -1,4 +1,3 @@
-import "./registration.scss";
 import { useState } from "react";
 import axios from "axios";
 import HeaderTopSection from "../../components/header-top-section/HeaderTopSection";
@@ -49,7 +48,7 @@ const Registration = () => {
       <HeaderTopSection />
       <HeaderCenterSection />
       <HeaderBottomSection />
-      <div className="registration-section">
+      <div className="auth-section">
         <div className="container">
           <div className="row d-flex align-items-center justify-content-center">
             <div className="col-lg-6 col-xs-12">
@@ -60,7 +59,7 @@ const Registration = () => {
                   <img src={VectorLine} />
                 </div>
                 <form onSubmit={onSubmitHandler}>
-                  <div class="d-flex align-items-center gap-2 mb-3 registration-wrrap">
+                  <div class="d-flex align-items-center gap-3 mb-3 auth-wrrap">
                     <div className="w-100">
                       <label for="exampleInputEmail1" class="form-label">
                         First Name*
@@ -104,7 +103,7 @@ const Registration = () => {
                        {emailErrorMessages.map((error) => <p className="small text-danger">{error}</p>)}
                     </div>
                   </div>
-                  <div class="d-flex  align-items-center gap-2 mb-3 registration-wrrap">
+                  <div class="d-flex  align-items-center gap-3 mb-3 auth-wrrap">
                     <div className="w-100">
                       <label for="exampleInputPassword1" className="form-label">
                         Password*

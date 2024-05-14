@@ -3,6 +3,7 @@ import Home from "../src/pages/Home";
 import Registration from "./pages/registration/Registration";
 import 'swiper/css/bundle';
 import 'swiper/css/pagination';
+import Login from "./pages/login/Login";
 
 
 
@@ -10,7 +11,9 @@ import 'swiper/css/pagination';
 function App() {
   return (
     <div>
-      <Registration />
+      {/* <Home /> */}
+     <Registration /> 
+      <Login />
     </div>
   );
 }

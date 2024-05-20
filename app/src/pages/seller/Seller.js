@@ -15,7 +15,7 @@ const Seller = () => {
       <HeaderTopSection />
       <HeaderCenterSection />
       <HeaderBottomSection />
-      <BlogTitleSection title="Become A Seller!"/>
+      <BlogTitleSection title="Become A Seller!" />
       <div className="seller-section">
         <div className="container">
           <div className="seller-application-section">
@@ -31,9 +31,12 @@ const Seller = () => {
                       </p>
                     </div>
                     <form>
-                      <div class="d-flex flex-column gap-3 mb-3 auth-wrrap">
+                      <div className="d-flex flex-column gap-3 mb-3 auth-wrrap">
                         <div className="w-100">
-                          <label for="exampleInputEmail1" class="form-label">
+                          <label
+                            htmlFor="exampleInputEmail1"
+                            className="form-label"
+                          >
                             Email Adress**
                           </label>
                           <input
@@ -46,7 +49,7 @@ const Seller = () => {
                         </div>
                         <div className="w-100">
                           <label
-                            for="exampleInputPassword1"
+                            htmlFor="exampleInputPassword1"
                             className="form-label"
                           >
                             Phone*
@@ -71,9 +74,12 @@ const Seller = () => {
                     </div>
 
                     <form>
-                      <div class="d-flex flex-column gap-3 mb-3 auth-wrrap">
+                      <div className="d-flex flex-column gap-3 mb-3 auth-wrrap">
                         <div className="w-100">
-                          <label for="exampleInputEmail1" class="form-label">
+                          <label
+                            htmlFor="exampleInputEmail1"
+                            className="form-label"
+                          >
                             Shop Name**
                           </label>
                           <input
@@ -86,7 +92,7 @@ const Seller = () => {
                         </div>
                         <div className="w-100">
                           <label
-                            for="exampleInputPassword1"
+                            htmlFor="exampleInputPassword1"
                             className="form-label"
                           >
                             Address*
@@ -99,7 +105,7 @@ const Seller = () => {
                           />
                         </div>
                       </div>
-                      <div class="form-check mb-4 mt-4">
+                      <div className="form-check mb-4 mt-4">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -107,7 +113,7 @@ const Seller = () => {
                         />
                         <label
                           className="form-check-label text-secondary mb-2"
-                          for="exampleCheck1"
+                          htmlFor="exampleCheck1"
                         >
                           I agree all terms and condition in Ecoshop
                         </label>
@@ -120,7 +126,12 @@ const Seller = () => {
                       </button>
                       <p className="text-secondary mt-4">
                         Already have an Account? &nbsp;
-                        <Link to="/login" className="fw-bold text-decoration-none">Log in</Link> 
+                        <Link
+                          to="/login"
+                          className="fw-bold text-decoration-none"
+                        >
+                          Log in
+                        </Link>
                       </p>
                     </form>
                   </div>
@@ -138,10 +149,13 @@ const Seller = () => {
                     <div className="d-flex justify-content-center align-items-center  position-relative">
                       <img className="upload-img" src={UpLoad} />
                       <div className="input-file-position">
-                        <label for="File" className="form-label label-uploade">
+                        <label
+                          htmlFor="File"
+                          className="form-label label-uploade"
+                        >
                           <InputFile />
                         </label>
-                        <input  type="file" id="File" />
+                        <input type="file" id="File" />
                       </div>
                     </div>
                   </div>
@@ -153,10 +167,13 @@ const Seller = () => {
                     <div className="d-flex justify-content-center align-items-center  position-relative">
                       <img className="upload-cover" src={SallerCover} />
                       <div className="input-file2-position">
-                        <label for="File" className="form-label label-uploade">
+                        <label
+                          htmlFor="File"
+                          className="form-label label-uploade"
+                        >
                           <InputFile />
                         </label>
-                        <input  type="file" id="File" />
+                        <input type="file" id="File" />
                       </div>
                     </div>
                   </div>

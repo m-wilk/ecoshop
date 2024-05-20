@@ -54,9 +54,9 @@ const Login = () => {
                     <img src={VectorLine} />
                   </div>
                   <form onSubmit={onSubmitHandler}>
-                    <div class="d-flex flex-column gap-3 mb-3 auth-wrrap">
+                    <div className="d-flex flex-column gap-3 mb-3 auth-wrrap">
                       <div className="w-100">
-                        <label for="exampleInputEmail1" class="form-label">
+                        <label htmlFor="exampleInputEmail1" className="form-label">
                           Email**
                         </label>
                         <input
@@ -71,7 +71,7 @@ const Login = () => {
                       </div>
                       <div className="w-100">
                         <label
-                          for="exampleInputPassword1"
+                          htmlFor="exampleInputPassword1"
                           className="form-label"
                         >
                           Password*
@@ -86,7 +86,7 @@ const Login = () => {
                         />
                       </div>
                     </div>
-                    <div class="d-flex justify-content-between mb-3 form-check">
+                    <div className="d-flex justify-content-between mb-3 form-check">
                       <div>
                         <input
                           type="checkbox"
@@ -95,7 +95,7 @@ const Login = () => {
                         />
                         <label
                           className="form-check-label text-secondary"
-                          for="exampleCheck1"
+                          htmlFor="exampleCheck1"
                         >
                           Remember Me
                         </label>

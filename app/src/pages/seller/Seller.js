@@ -15,7 +15,7 @@ const Seller = () => {
       <HeaderTopSection />
       <HeaderCenterSection />
       <HeaderBottomSection />
-      <BlogTitleSection />
+      <BlogTitleSection title="Become A Seller!"/>
       <div className="seller-section">
         <div className="container">
           <div className="seller-application-section">

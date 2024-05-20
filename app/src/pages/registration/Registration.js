@@ -7,7 +7,7 @@ import FooterSection from "../../components/footer-section/FooterSection";
 import VectorLine from "../../assets/img/vector-line.png";
 import AccountImg from "../../assets/img/account-img.png";
 import { Link, useNavigate } from "react-router-dom";
-import BlogTitleSection from "../../components/blog-tittle-section/BlogTitleSection";
+
 
 const Registration = () => {
   const navigate = useNavigate();
@@ -44,7 +44,7 @@ const Registration = () => {
       <HeaderTopSection />
       <HeaderCenterSection />
       <HeaderBottomSection />
-      <BlogTitleSection />
+    
       <div className="auth-section">
         <div className="container">
           <div className="row d-flex align-items-center justify-content-center">

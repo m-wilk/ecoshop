@@ -6,7 +6,8 @@ import HeaderBottomSection from "../../components/header-bottom-section/HeaderBo
 import FooterSection from "../../components/footer-section/FooterSection";
 import VectorLine from "../../assets/img/vector-line.png";
 import AccountImg from "../../assets/img/account-img.png";
-import BlogTitleSection from "../../components/blog-tittle-section/BlogTitleSection";
+
+
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -40,7 +41,7 @@ const Login = () => {
       <HeaderTopSection />
       <HeaderCenterSection />
       <HeaderBottomSection />
-      <BlogTitleSection />
+     
       <div>
         <div className="auth-section">
           <div className="container">

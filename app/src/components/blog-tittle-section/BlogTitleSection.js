@@ -1,6 +1,6 @@
 import "./blog-title-section.scss";
 
-const BlogTitleSection = () => {
+const BlogTitleSection = (props) => {
   return (
     <div className="blog-title-section">
       <div className="container">
@@ -13,11 +13,11 @@ const BlogTitleSection = () => {
           <span> / </span>
           <span>
             <a className="text-decoration-none" href="#">
-              Seller Application
+              Dashboard
             </a>
           </span>
         </div>
-        <h1 className="text-center fw-bold">Become A Seller!</h1>
+        <h1 className="text-center fw-bold">{props.title}</h1>
       </div>
     </div>
   );

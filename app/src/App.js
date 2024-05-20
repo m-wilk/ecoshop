@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import Login from "./pages/login/Login";
 import Seller from "./pages/seller/Seller";
 import { Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 
 
@@ -19,7 +20,7 @@ function App() {
         <Route path="/registration" element={ <Registration /> }/>
         <Route path="/login" element={ <Login /> }/>
         <Route path="/seller" element={ <Seller /> }/>
-      
+        <Route path="/user-dashboard" element={ <Dashboard /> }/>
       </Routes>
      
     </div>

@@ -56,9 +56,9 @@ const Registration = () => {
                   <img src={VectorLine} />
                 </div>
                 <form onSubmit={onSubmitHandler}>
-                  <div class="d-flex align-items-center gap-3 mb-3 auth-wrrap">
+                  <div className="d-flex align-items-center gap-3 mb-3 auth-wrrap">
                     <div className="w-100">
-                      <label for="exampleInputEmail1" class="form-label">
+                      <label htmlFor="exampleInputEmail1" className="form-label">
                         First Name*
                       </label>
                       <input
@@ -70,7 +70,7 @@ const Registration = () => {
                       />
                     </div>
                     <div className="w-100">
-                      <label for="exampleInputEmail1" class="form-label">
+                      <label htmlFor="exampleInputEmail1" className="form-label">
                         Last Name*
                       </label>
                       <input
@@ -82,9 +82,9 @@ const Registration = () => {
                       />
                     </div>
                   </div>
-                  <div class="mb-3">
+                  <div className="mb-3">
                     <div>
-                      <label for="exampleInputEmail1" class="form-label">
+                      <label htmlFor="exampleInputEmail1" className="form-label">
                         Email*
                       </label>
                       <input
@@ -104,9 +104,9 @@ const Registration = () => {
                         : null}
                     </div>
                   </div>
-                  <div class="d-flex  align-items-center gap-3 mb-3 auth-wrrap">
+                  <div className="d-flex  align-items-center gap-3 mb-3 auth-wrrap">
                     <div className="w-100">
-                      <label for="exampleInputPassword1" className="form-label">
+                      <label htmlFor="exampleInputPassword1" className="form-label">
                         Password*
                       </label>
                       <input
@@ -124,7 +124,7 @@ const Registration = () => {
                         : null}
                     </div>
                     <div className="w-100">
-                      <label for="exampleInputPassword1" className="form-label">
+                      <label htmlFor="exampleInputPassword1" className="form-label">
                         Retype Password*
                       </label>
                       <input
@@ -142,7 +142,7 @@ const Registration = () => {
                         : null}
                     </div>
                   </div>
-                  <div class="mb-3 form-check">
+                  <div className="mb-3 form-check">
                     <input
                       type="checkbox"
                       className="form-check-input"
@@ -150,7 +150,7 @@ const Registration = () => {
                     />
                     <label
                       className="form-check-label text-secondary"
-                      for="exampleCheck1"
+                      htmlFor="exampleCheck1"
                     >
                       I agree all terms and condition in{" "}
                       <span className="fw-bold">EcoShop.</span>

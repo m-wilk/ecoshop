@@ -1,0 +1,49 @@
+.seller-section {
+    padding: 5rem 0 6rem 0;
+    .seller-application-section {
+        padding: 3rem 2.5rem;
+        border-radius: 0.5rem;
+        background: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .seller-information {
+            padding-bottom: 1rem;
+        }
+        .upload-img {
+            margin-top: 1rem;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #34a853;
+        }
+        .label-uploade {
+            background: #34a853;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .input-file-position {
+            position: absolute;
+            top: 85%;
+            right: 38%;
+            input {
+                display: none;
+            }
+        }
+
+        .input-file2-position {
+            position: absolute;
+            top: 87%;
+            right: 10%;
+            input {
+                display: none;
+            }
+        }
+
+        .upload-cover {
+            width: 100%;
+            height: 10rem;
+            border-radius: 0.5rem;
+            border: 1px solid #34a853;;
+        }
+    }
+}

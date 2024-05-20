@@ -1,18 +1,19 @@
 import "./shop-button.scss";
 import { ReactComponent as DropDownIcon } from "../../assets/img/drop-down-icon.svg";
+import { Link } from "react-router-dom";
 
 const ShopButton = (props) => {
-    const { className, text, iconClassName = 'black-icon' } = props;
+  const { className, text, iconClassName = "black-icon" } = props;
   return (
-    <a
+    <Link
       className={`text-decoration-none shop-btn ${props.className}`}
-      href="product-sidebar.html"
+      to="/seller"
     >
       {props.text}
       <span className="ms-2">
         <DropDownIcon className={iconClassName} />
       </span>
-    </a>
+    </Link>
   );
 };
 

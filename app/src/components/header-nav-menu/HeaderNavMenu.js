@@ -1,6 +1,7 @@
 import "./header-nav-menu.scss";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const HeaderNawMenu = () => {
   const [navItems, setNavItems] = useState([]);
@@ -17,9 +18,9 @@ const HeaderNawMenu = () => {
       {navItems.map((navItem) => {
         return (
           <li key={navItem.id} className="nav-item">
-            <a className="nav-link text-white fw-bold" href="#">
+            <Link className="nav-link text-white fw-bold" to={`/${navItem.path}`}>
               <span>{navItem.label}</span>
-            </a>
+            </Link>
           </li>
         );
       })}

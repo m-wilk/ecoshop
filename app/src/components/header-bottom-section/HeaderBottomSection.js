@@ -3,6 +3,7 @@ import HeaderNawMenu from "../header-nav-menu/HeaderNavMenu";
 import "./header-bottom-section.scss"
 import ShopButton from "../shop-button/ShopButton";
 
+
 const HeaderBottomSection = () => {
   return (
     <div className="bg-success header-bottom-section">

@@ -1,0 +1,30 @@
+.switch-icon {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 4.6rem;
+    border: 1px solid #c0c0c0;
+    position: relative;
+    display: inline-block;
+   
+    
+    &.active {
+      background: green;
+      &::before {
+        background: white;
+        left: calc(100% - 1.4rem - 5px);
+      }
+    }
+    &::before {
+      content: "";
+      width: 1.4rem;
+      height: 1.4rem;
+      background: #1d1d1d;
+      border-radius: 50%;
+      position: absolute;
+      top: 3px;
+      left: 5px;
+      transition: left 0.5s ease-in;
+      display: inline-block;
+    }
+  }
+  

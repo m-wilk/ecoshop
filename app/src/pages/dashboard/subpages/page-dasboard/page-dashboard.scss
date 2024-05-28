@@ -1,0 +1,33 @@
+.page-dashboard-section {
+  // margin-top: 1rem;
+  .product-wrraper {
+    padding: 2rem;
+    background: #1d1d1d;
+    border-radius: 5px;
+    p {
+        font-size: 1.2rem;
+    }
+    &:hover {
+        background-color: darkgreen;
+        .icon-order-feel path {
+            fill: darkgreen;
+    }
+  }
+  .icon-order-feel rect {
+    fill: white;
+    }
+  }
+  .icon-order-feel path {
+    fill: darkorange;
+  }
+  .info-section {
+    background-color: rgb(245, 245, 245);
+    padding: 3rem;
+    border-radius: 5px;
+    .devider {
+        height: 10rem;
+        width: 1px;
+        background: #797979;
+    }
+  }
+}

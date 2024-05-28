@@ -3,11 +3,11 @@ import { ReactComponent as DropDownIcon } from "../../assets/img/drop-down-icon.
 import { Link } from "react-router-dom";
 
 const ShopButton = (props) => {
-  const { className, text, iconClassName = "black-icon" } = props;
+  const { className, to, text, iconClassName = "black-icon" } = props;
   return (
     <Link
       className={`text-decoration-none shop-btn ${props.className}`}
-      to="/seller"
+      to={props.to}
     >
       {props.text}
       <span className="ms-2">

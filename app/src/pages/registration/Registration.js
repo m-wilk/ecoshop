@@ -152,7 +152,7 @@ const Registration = () => {
                       className="form-check-label text-secondary"
                       for="exampleCheck1"
                     >
-                      I agree all terms and condition in{" "}
+                      I agree all terms and condition in
                       <span className="fw-bold">EcoShop.</span>
                     </label>
                   </div>
@@ -163,7 +163,7 @@ const Registration = () => {
                     Create an Account
                   </button>
                   <p className="text-center text-secondary">
-                    Already have an account ?{" "}
+                    Already have an account ?
                     <Link to="/login" className="fw-bold text-decoration-none">
                       Log in
                     </Link>

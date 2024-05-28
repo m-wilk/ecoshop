@@ -10,7 +10,7 @@ const HeaderBottomSection = () => {
       <div className="container d-flex flex-wrap justify-content-between align-items-center py-3 fw-medium ">
         <CategoryMenuSection />
         <HeaderNawMenu />
-      <ShopButton  text="Seller Login"/> 
+        <ShopButton to="/seller" text="Seller Login"/> 
       </div>
     </div>
   );

@@ -1,0 +1,22 @@
+.upload-img {
+    margin-top: 1rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #34a853;
+}
+
+.input-file-position {
+    position: absolute;
+    top: 85%;
+    right: 38%;
+    input {
+        display: none;
+    }
+    .label-uploade {
+        background: #34a853;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

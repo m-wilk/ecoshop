@@ -1,0 +1,50 @@
+.product-categories-section {
+  padding: 7rem 0 8rem;
+  .checkbox-list-wrapper {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 4rem 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .sidebar-section {
+    background: url("../../assets/img/sidebar-img.png") center center no-repeat;
+    background-size: cover;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    height: 22rem;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .product-sorting-section {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .list-option {
+      position: absolute;
+      top: 3.8rem;
+      left: 4rem;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border-radius: 5px;
+      .detail-option {
+        padding: 9px 16px;
+      }
+    }
+    .click-away {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+      position: fixed;
+    }
+  }
+  .product-details-section {
+    padding: 3rem;
+    border-radius: 5px;
+    background: url("../../assets/img/product-deal-.png") no-repeat center center;
+    background-size: cover;
+  }
+}

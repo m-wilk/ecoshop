@@ -18,6 +18,10 @@
   fill: black;
 }
 
+.grey-icon, .grey-icon rect {
+  fill:rgb(134, 133, 133)
+}
+
 .input-group input.form-control:focus {
   outline: none; 
   box-shadow: none;

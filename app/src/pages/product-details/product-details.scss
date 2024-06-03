@@ -1,0 +1,27 @@
+.product-details-section{
+  padding: 4rem 0 5rem 0;
+  background: #fff;
+  
+  
+  .swiper-backround {
+    border: 1px solid grey;
+    border-radius: 1rem;
+    .product-discount {
+        position: absolute;
+        background: #ffbb38;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        top: 2rem;
+        left: 2rem;
+    }
+  }
+  .thumber-swiper-wrapper-img {
+    height: 9rem;
+    width: 9rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray
+
+  }
+}

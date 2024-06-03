@@ -3,17 +3,11 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import HeroService from "../hero-service/HeroService";
 import { ReactComponent as DropDownIcon } from "../../assets/img/drop-down-icon.svg";
-import Hero from "../../assets/img/hero-img-1.png";
-import Hero2 from "../../assets/img/hero-img-2.png";
-import Hero3 from "../../assets/img/hero-img-3_1.png";
+// import Hero from "../../assets/img/hero-img-1.png";
+// import Hero2 from "../../assets/img/hero-img-2.png";
+// import Hero3 from "../../assets/img/hero-img-3_1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  EffectFade,
-} from "swiper/modules";
+import { Navigation,Pagination, Scrollbar, A11y, EffectFade,} from "swiper/modules";
 import ShopButton from "../shop-button/ShopButton";
 
 const HeroSection = () => {

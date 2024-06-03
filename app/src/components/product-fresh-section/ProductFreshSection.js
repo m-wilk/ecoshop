@@ -1,7 +1,6 @@
 import TitleSection from "../title-section/TitleSection";
 import "./product-fresh-section.scss";
 import ProductFreshItem from "../product-fresh-item/ProductFreshItem";
-import scrollreveal from "scrollreveal";
 import ScrollReveal from "../scroll-reveal/ScrollReveal";
 
 const ProductCategorySection = (props) => {

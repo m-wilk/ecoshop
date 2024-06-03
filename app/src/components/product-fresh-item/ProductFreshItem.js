@@ -3,6 +3,7 @@ import "./product-fresh-item.scss";
 import { ReactComponent as RitingsIcon } from "../../assets/img/ritings.svg";
 import { ReactComponent as AddProduce } from "../../assets/img/add-product.svg";
 import { ReactComponent as CardItem } from "../../assets/img/card-item.svg";
+import { Link } from "react-router-dom";
 
 const ProductFreshItem = (props) => {
   return (
@@ -26,12 +27,12 @@ const ProductFreshItem = (props) => {
         <div className="ritings">
           <RitingsIcon />
         </div>
-        <a
+        <Link
           className="text-decoration-none product-details fw-bold"
-          href="product-info.html"
+          to="#"
         >
           {props.title}
-        </a>
+        </Link>
         <div className="d-flex justify-content-center align-items-center price">
           <span className="text-secondary fw-bold price-cut">$12.99</span>
           <span className="text-danger fw-bold new-price">$6.99</span>

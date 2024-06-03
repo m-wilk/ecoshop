@@ -8,6 +8,8 @@ import "swiper/css/thumbs";
 
 import { Controller, FreeMode, Navigation, Thumbs } from "swiper/modules";
 
+// https://stackoverflow.com/questions/73216868/swiper-thumbs-gallery-loop-react-not-working-in-react-js
+
 export default function App() {
   const [thumbsSwiper, setThumbsSwiper] = useState();
   const swiperRef = useRef(null);

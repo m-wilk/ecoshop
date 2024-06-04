@@ -14,6 +14,7 @@
         border-radius: 50%;
         top: 2rem;
         left: 2rem;
+        z-index: 20;
     }
   }
   .thumber-swiper-wrapper-img {
@@ -24,4 +25,12 @@
     border: 1px solid gray
 
   }
+  .product-available {
+    padding: 10px 15px;
+    background-color: rgba(52, 168, 83, 0.06);
+    border-radius: 1rem;
+    display: inline-block;
+  }
 }
+
+  

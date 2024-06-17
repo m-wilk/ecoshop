@@ -10,7 +10,9 @@ import { ReactComponent as Arrowdown } from "../../assets/img/arrowdown.svg";
 import ProductFreshItem from "../../components/product-fresh-item/ProductFreshItem";
 import ScrollReveal from "../../components/scroll-reveal/ScrollReveal";
 import ShopButton from "../../components/shop-button/ShopButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { useSearchParams } from "react-router-dom";
 
 const categories = [
   {
@@ -70,7 +72,27 @@ const categories3 = [
 ];
 
 const ProductCategories = () => {
+  
   const [isOpen, setIsOpen] = useState(false);
+
+  const [products, setProducts] = useState([]);
+
+  let [searchParams] = useSearchParams();
+  const selectedCategory = searchParams.get("category");
+
+  
+  useEffect(() => {
+    let url = "http://localhost:8100/api/v1/products/";
+    if (selectedCategory && selectedCategory !== "0") {
+      url += `?category=${selectedCategory}`;
+    }
+    
+    axios.get(url).then((response) => {
+      setProducts(response.data);
+      console.log(response.data);
+    });
+  }, [selectedCategory]);
+
   return (
     <>
       <HeaderTopSection />
@@ -137,28 +159,17 @@ const ProductCategories = () => {
                 </div>
                 <ScrollReveal>
                   <div className="row g-5">
-                    <div className="col-xl-4 col-sm-6">
-                      <ProductFreshItem title="Fresh Red Tomatos" />
-                    </div>
-                    <div className="col-xl-4 col-sm-6">
-                      <ProductFreshItem title="Fresh Red Tomatos" />
-                    </div>
-                    <div className="col-xl-4 col-sm-6">
-                      <ProductFreshItem title="Fresh Red Tomatos" />
-                    </div>
-                  </div>
-                </ScrollReveal>
-                <ScrollReveal>
-                  <div className="row g-5">
-                    <div className="col-xl-4 col-sm-6">
-                      <ProductFreshItem title="Fresh Red Tomatos" />
-                    </div>
-                    <div className="col-xl-4 col-sm-6">
-                      <ProductFreshItem title="Fresh Red Tomatos" />
-                    </div>
-                    <div className="col-xl-4 col-sm-6">
-                      <ProductFreshItem title="Fresh Red Tomatos" />
-                    </div>
+                    {products.map((product) => {
+                      return (
+                        <div className="col-xl-4 col-sm-6">
+                          <ProductFreshItem
+                            id={product.id}
+                            title={product.title}
+                            price={product.price}
+                          />
+                        </div>
+                      );
+                    })}
                   </div>
                 </ScrollReveal>
                 <ScrollReveal>

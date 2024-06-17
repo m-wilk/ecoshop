@@ -1,21 +1,53 @@
+import { useContext, useEffect } from "react";
+import axios from "axios";
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import { createSearchParams } from "react-router-dom";
 
 const HeaderSearchBtn = () => {
+  const navigate = useNavigate();
+
+  const [categories, setCategories] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:8100/api/v1/common/categories/")
+      .then((reponse) => {
+        setCategories(reponse.data);
+        console.log(reponse.data);
+      });
+  }, []);
+
+  const handleOnSearch = (e) => {
+    e.preventDefault();
+    const params = createSearchParams({category: e.target.selectedCategory.value});
+    navigate(`/shop?${params}`);
+  };
+
   return (
-    <form className="d-flex align-items-center  border border-success rounded-end-3">
+    <form
+      onSubmit={handleOnSearch}
+      className="d-flex align-items-center  border border-success rounded-end-3"
+    >
       <input
         type="text"
         className="form-control border-0 me-3 custom-input"
         placeholder="Search Product..."
-      ></input>
+        name="searchTerm"
+      />
       <div className="devider me-3"></div>
-      <select defaultValue="0" className="form-select border-0 custom-input">
-        <option value="0">Meat</option>
-        <option value="1">Vegrtable</option>
-        <option value="2">Fruits</option>
-        <option value="3">Juice</option>
-        <option value="4">Meat</option>
+      <select
+        defaultValue="0"
+        name="selectedCategory"
+        className="form-select border-0 custom-input"
+      >
+        <option value="0">All categories</option>
+        {categories.map((category) => {
+          return <option value={category.id}>{category.name}</option>;
+        })}
       </select>
-      <button type="submit" className="btn btn-success rounded-start-0">Search</button>
+      <button type="submit" className="btn btn-success rounded-start-0">
+        Search
+      </button>
     </form>
   );
 };

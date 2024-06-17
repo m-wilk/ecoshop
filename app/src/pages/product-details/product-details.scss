@@ -1,36 +1,98 @@
-.product-details-section{
+.product-details-section, .product-description-section {
   padding: 4rem 0 5rem 0;
   background: #fff;
-  
-  
-  .swiper-backround {
-    border: 1px solid grey;
-    border-radius: 1rem;
-    .product-discount {
-        position: absolute;
-        background: #ffbb38;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        top: 2rem;
-        left: 2rem;
-        z-index: 20;
-    }
-  }
-  .thumber-swiper-wrapper-img {
-    height: 9rem;
-    width: 9rem;
-    padding: 1rem;
-    border-radius: 5px;
-    border: 1px solid gray
 
-  }
+  
+  
+    .product-discount {
+      position: absolute;
+      background: #ffbb38;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      top: 2rem;
+      left: 2rem;
+      z-index: 20;
+    }
+  
+ 
   .product-available {
     padding: 10px 15px;
     background-color: rgba(52, 168, 83, 0.06);
     border-radius: 1rem;
     display: inline-block;
   }
+  .select-weight {
+    padding: 1rem 2rem;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+    .icon-size {
+      height: 13px;
+      width: 13px;
+    }
+    }
+    .select-weight-list-hidden {
+      background: #ffffff;
+      border: 1px solid #d5d5d5;
+      border-radius: 10px;
+      position: absolute;
+      top: calc(100% + 5px); 
+      li {
+        padding: 13px 23px;
+        &:hover {
+          color: white;
+          background: green
+          ;
+        }
+      }
+  }
+  .quantity {
+    width: 8rem;
+  }
+  .icon-hover {
+    transition: transform 0.3s ease;
+   
+    &:hover {
+      transform: translateX(-5px) ;
+    }
+  }
+
+  .quantity, .wish-list-icon {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(52, 168, 83, 0.15);
+   
+  } 
+  .shop-btn-addtocard {
+  
+    background: #34a853;
+    color: #fff;
+    border-radius: 0.5rem;
+    
+  }
+  .product-details {
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+ .nav-tabs {
+  border-bottom: 1px solid rgba(52, 168, 83, 0.06);
+ 
+ }
+ .tab-content-section {
+  padding: 2rem 0 0 0;
+ }
+ .img-author-size {
+  width: 51px;
+  height: 53px;
+ }
+.underline-tab {
+  border-radius: 0;
+  
+  border-bottom: 1px solid  #34a853;
+}
+.weekly-sale-product-section {
+  padding: 5rem 0 6rem 0;
+  background: #f8f8f8;
+}
 }
 
-  

@@ -12,19 +12,25 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import ProductCategories from "./pages/product-categories/ProductCategories";
 import ProductDetails from "./pages/product-details/ProductDetails";
 
+
 function App() {
+
+
   return (
-    <div>
+    
+       <div>
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/login" element={<Login />} />
         <Route path="/seller" element={<Seller />} />
         <Route path="/user-dashboard/*" element={<Dashboard />} />
-        {/* <Route path="/shop" element={<ProductCategories />} /> */}
-        <Route path="/shop" element={<ProductDetails />} />
+        <Route path="/shop" element={<ProductCategories />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
       </Routes>
     </div>
+   
+   
   );
 }
 

@@ -1,4 +1,5 @@
 @import "./assets/scss/bootstrap.scss";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 .devider {
   height: 1.4rem;
@@ -11,6 +12,12 @@
   box-shadow: none;
 }
 
+.custom-button:active {
+  color: none;
+  background-color: none;
+  border-color: none;
+}
+
 .white-icon {
   fill: white;
 }
@@ -18,12 +25,13 @@
   fill: black;
 }
 
-.grey-icon, .grey-icon rect {
-  fill:rgb(134, 133, 133)
+.grey-icon,
+.grey-icon rect {
+  fill: rgb(134, 133, 133);
 }
 
 .input-group input.form-control:focus {
-  outline: none; 
+  outline: none;
   box-shadow: none;
 }
 
@@ -54,10 +62,56 @@
     padding: 4rem;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    .auth-wrrap  {
-        @media (max-width: 992px) {
-          flex-wrap: wrap;
-        }
+    .auth-wrrap {
+      @media (max-width: 992px) {
+        flex-wrap: wrap;
       }
+    }
   }
+}
+
+.transition-all {
+  transition: all 0.3s ease-out;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.input-reset {
+  all: unset;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image-gallery-thumbnail.active {
+  border: none;
+}
+.image-gallery-thumbnail,
+.image-gallery-thumbnail:hover {
+  border: none;
+}
+
+.image-gallery-thumbnails-container {
+  padding: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+}
+.image-gallery-thumbnail {
+  height: 6rem;
+  width: 6rem;
+  padding: 1rem;
+  &.active {
+    border-radius: 5px;
+    border: 1px solid rgb(222, 222, 222);
+  
+  }
+}
+
+.image-gallery-slides {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 1rem;
 }

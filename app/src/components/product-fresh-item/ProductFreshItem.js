@@ -5,6 +5,7 @@ import { ReactComponent as AddProduce } from "../../assets/img/add-product.svg";
 import { ReactComponent as CardItem } from "../../assets/img/card-item.svg";
 import { Link } from "react-router-dom";
 
+
 const ProductFreshItem = (props) => {
   return (
     <div className={`product-fresh-item bg-white ${props.className}`}>
@@ -29,13 +30,13 @@ const ProductFreshItem = (props) => {
         </div>
         <Link
           className="text-decoration-none product-details fw-bold"
-          to="#"
+          to={`/products/${props.id}`}
         >
           {props.title}
         </Link>
         <div className="d-flex justify-content-center align-items-center price">
-          <span className="text-secondary fw-bold price-cut">$12.99</span>
-          <span className="text-danger fw-bold new-price">$6.99</span>
+          <span className="text-secondary fw-bold price-cut">{props.price}</span>
+          <span className="text-danger fw-bold new-price">{props.price}</span>
         </div>
         <div className="w-100">
           <a
